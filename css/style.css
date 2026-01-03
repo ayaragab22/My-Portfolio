@@ -1,0 +1,260 @@
+*{
+    font-family: "Radley", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+:root{
+    --main-bg-color: #F4F1E8;
+    --sec-bg-color: #9B4819;
+    
+}
+.line{
+    height: 3px;
+    margin: auto;
+    background-color: #9B4819;
+    width: 1000px;
+}
+
+.lines div{
+    height: 1px;
+    background-color: var(--sec-bg-color);
+    margin: auto;
+}
+.lines .first{
+    width: 80px;
+    margin-top: 5px;
+}
+.lines .second{
+    width: 300px;
+    margin-top: 5px;
+}
+.lines .third{
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+/* Start of Navbar */
+.navbar{
+   background-color: #9b4919ca;
+/* background: radial-gradient(circle, rgba(244, 241, 232, 1) 1%, rgba(155, 72, 25, 1) 100%); */
+}
+#nav.navbar .nav-link{
+  color: rgba(75, 70, 70, 0.729);
+  font-size: 25px;
+  margin-right: 10px;  
+}
+#nav.navbar .active{
+  color: #222;  
+}
+#nav.navbar .nav-link:hover{
+  color: var(--main-bg-color); 
+}
+/* End of Navbar */
+
+/* Start of Header */
+header {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;      
+    text-align: center;       
+    gap: 15px;                 
+    padding: 40px 20px; 
+    height: 100vh;      
+    background: #F4F1E8;
+background: radial-gradient(circle, rgba(244, 241, 232, 1) 38%, rgba(155, 72, 25, 1) 100%);
+}
+
+
+header img {
+    width: 350px;              
+    height: 350px;
+    display: block;
+    animation: float 1.5s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+    font-size: 90px;
+    margin: 0;
+    color: #222;
+}
+
+header h3{
+    font-size: 25px;
+    max-width: 600px;
+    color: #222;
+    margin-top: 20px;
+}
+/* End of Header */
+
+/* Start of About section */
+#about {
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+}
+
+#about img {
+  height: 100vh;
+  width: 100%;
+  /* object-fit: cover; */
+  /* overflow: hidden; */
+}
+
+#about .content {
+  max-width: 600px;
+  margin: auto;
+}
+
+#about h2 {
+  font-size: 60px;
+  text-shadow: 2px 2px 5px #9b4919a8;
+  color: var(--sec-bg-color);
+  margin-bottom: 30px;
+  
+}
+
+
+#about p {
+  font-size: 25px;
+  color: #222;
+}
+#about .learn{
+    margin-top: 90px;
+    margin-bottom: 100px;
+
+}
+#about .learn h3{
+  font-size: 60px;
+  color: var(--sec-bg-color);
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+#about .learn img{
+    width: 40%;
+    height: 210px;
+}
+#about .learn .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#about .learn h4 {
+  /* position: relative; */
+  margin-top: 50px;
+  font-size: 25px;
+}
+#about .learn p{
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+#about .learn h4::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 3px;
+  background-color: var(--sec-bg-color);
+  margin: 8px auto 0;
+}
+/* End of About section */
+
+/*  Start of Projects section  */
+#proj .card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #E2E2E5;
+    width: 95%;
+    overflow: hidden;
+
+}
+#proj .card img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+#proj .card:hover{
+    transform: scale(1.1);
+}
+
+#proj h3{
+    
+  font-size: 60px;
+  color: var(--sec-bg-color);
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+#proj{
+    background-color: #F8F8F8;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+/*  End of Projects section  */
+
+/* Start of contact section */
+#contact{
+    background-color: #9B4819;
+}
+
+#contact .mob{
+    margin-bottom: 40px;
+}
+#contact .icon{
+    display: inline-block;
+    padding-top: 40px;
+    cursor: pointer;
+    
+}
+#contact .icon a{
+    padding-left: 20px;
+    color: var(--sec-bg-color);          
+  font-size: 24px;         
+  padding: 10px;          
+  background: #f1f5f9;     
+  border-radius: 50%;      
+  text-decoration: none;
+  
+  transition: all 0.3s ease;
+    
+}
+#contact .icon a:hover{
+    color: var(--main-bg-color);
+    background-color: var(--sec-bg-color);
+    
+}
+/* End of contact section */
+
+/* Start of Footer */
+#contact{
+  color: var(--main-bg-color);
+  height: 300px;
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+#contact .typo p{
+  font-size: 50px;
+  
+}
